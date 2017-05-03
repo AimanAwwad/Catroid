@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Catroid: An on-device visual programming system for Android devices
-  ~ Copyright (C) 2010-2016 The Catrobat Team
+  ~ Copyright (C) 2010-2017 The Catrobat Team
   ~ (<http://developer.catrobat.org/credits>)
   ~
   ~ This program is free software: you can redistribute it and/or modify
@@ -34,7 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
         android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
         android:gravity="right"
         android:visibility="gone" />
 
@@ -52,7 +54,7 @@
             android:layout_width="72dp"
             android:layout_height="65dp"
             android:layout_centerVertical="true"
-            android:layout_marginStart="9dp"
+            android:layout_marginLeft="9dp"
             android:background="@drawable/image_contour"
             android:cropToPadding="true"
             android:scaleType="centerCrop" />
@@ -63,14 +65,15 @@
             android:layout_toLeftOf="@+id/list_item_image_view"
             android:gravity="center_vertical"
             android:orientation="vertical"
-            android:paddingStart="12.5dp" >
+            android:paddingLeft="12.5dp" >
 
             <TextView
                 android:id="@+id/list_item_text_view"
                 style="@style/look_fragment_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingEnd="8dp" />
+                android:paddingStart="8dp"
+                android:paddingLeft="8dp"/>
 
             <LinearLayout
                 android:id="@+id/list_item_details"
@@ -88,36 +91,32 @@
                         android:id="@+id/details_left_top"
                         style="@style/look_fragment_detail"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textDirection="rtl"/>
+                        android:layout_height="wrap_content" />
 
                     <TextView
                         android:id="@+id/details_left_bottom"
                         style="@style/look_fragment_detail"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textDirection="rtl"/>
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:paddingStart="39dp" >
+                    android:paddingLeft="39dp" >
 
                     <TextView
                         android:id="@+id/details_right_top"
                         style="@style/look_fragment_detail"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textDirection="rtl"/>
+                        android:layout_height="wrap_content" />
 
                     <TextView
                         android:id="@+id/details_right_bottom"
                         style="@style/look_fragment_detail"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textDirection="rtl"/>
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
