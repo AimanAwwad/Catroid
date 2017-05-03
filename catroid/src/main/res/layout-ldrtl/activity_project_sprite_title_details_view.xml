@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Catroid: An on-device visual programming system for Android devices
-  ~ Copyright (C) 2010-2016 The Catrobat Team
+  ~ Copyright (C) 2010-2017 The Catrobat Team
   ~ (<http://developer.catrobat.org/credits>)
   ~
   ~ This program is free software: you can redistribute it and/or modify
@@ -41,18 +41,21 @@
         <TextView
             android:id="@+id/textView_number_of_scripts"
             android:paddingStart="12.5dp"
+            android:paddingLeft="12.5dp"
             style="@style/ListViewItemDetailsText"/>
 
         <TextView
             android:id="@+id/textView_number_of_looks"
             android:layout_below="@id/textView_number_of_scripts"
             android:paddingStart="12.5dp"
+            android:paddingLeft="12.5dp"
             style="@style/ListViewItemDetailsText"/>
 
         <TextView
             android:id="@+id/textView_number_of_bricks"
             android:layout_toLeftOf="@id/textView_number_of_scripts"
             android:paddingStart="39dp"
+            android:paddingLeft="39dp"
             style="@style/ListViewItemDetailsText"/>
 
         <TextView
@@ -60,6 +63,7 @@
             android:layout_below="@id/textView_number_of_bricks"
             android:layout_toLeftOf="@id/textView_number_of_scripts"
             android:paddingStart="39dp"
+            android:paddingLeft="39dp"
             style="@style/ListViewItemDetailsText"/>
     </RelativeLayout>
 
